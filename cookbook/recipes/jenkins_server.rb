@@ -38,10 +38,6 @@ end
 
 include_recipe 'met-bora-ci::_common'
 
-jenkins_plugin 'git' do
-    notifies :reload, "service[jenkins]", :immediately
-end
+jenkins_plugin 'git'
 
-jenkins_plugin 'build-pipeline-plugin' do
-    notifies :reload, "service[jenkins]", :immediately
-end
+jenkins_plugin 'build-pipeline-plugin'

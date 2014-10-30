@@ -14,5 +14,4 @@ svc = Helpers::Docker.docker_service(node)
 group "docker" do
     members node[:'met-bora-ci'][:ci_user]
     notifies :restart, "service[#{svc}]"
-    notifies :reload, "service[jenkins]", :immediately
 end
