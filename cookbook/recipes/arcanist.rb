@@ -23,9 +23,9 @@ arcrc_hash = {
     }
 }
 
-file '/var/go/.arcrc' do
-    owner 'go'
-    group 'go'
+file "/etc/arcrc" do
+    owner node[:'met-bora-ci'][:ci_user]
+    group node[:'met-bora-ci'][:ci_user]
     mode '0600'
     content JSON.pretty_generate(arcrc_hash)
 end

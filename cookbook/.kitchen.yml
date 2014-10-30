@@ -11,7 +11,7 @@ platforms:
   - name: ubuntu-14.04
 
 suites:
-  - name: default
+  - name: jenkins-server
     run_list:
-        - recipe[met-bora-ci]
+        - recipe[met-bora-ci::jenkins_server]
     attributes:

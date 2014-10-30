@@ -1,17 +1,17 @@
 #
 # Cookbook Name:: met-bora-ci
-# Recipe:: server
+# Recipe:: go_server
 #
 # Copyright (C) 2014 MET Norway
 #
-# All rights reserved - Do Not Redistribute
+# This recipe sets up a Go server.
 #
 
-package 'git'
-
-include_recipe 'met-bora-ci::arcanist'
+node.default[:'met-bora-ci'][:ci_user] = 'go'
 
 include_recipe 'go::default'
+
+include_recipe 'met-bora-ci::_common'
 
 include_recipe 'nginx'
 

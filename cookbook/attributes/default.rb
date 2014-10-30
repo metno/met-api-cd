@@ -11,3 +11,5 @@ default[:'met-bora-ci'][:agent_search_query] =
 default[:'met-bora-ci'][:phabricator][:url] = 'https://phabricator.example.com'
 default[:'met-bora-ci'][:phabricator][:user] = 'fixme'
 default[:'met-bora-ci'][:phabricator][:certificate] = 'fixme'
+
+default[:'met-bora-ci'][:ci_user] = 'jenkins'
