@@ -10,6 +10,8 @@ RUN wget http://dl.bintray.com/sbt/debian/sbt-0.13.5.deb
 RUN dpkg -i sbt-0.13.5.deb
 RUN rm sbt-0.13.5.deb
 
+RUN git clone https://github.com/metno/met-api.git
+
 WORKDIR /root/met-api
 RUN sbt clean stage dist
 
