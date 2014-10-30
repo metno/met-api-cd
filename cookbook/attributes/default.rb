@@ -13,3 +13,5 @@ default[:'met-bora-ci'][:phabricator][:user] = 'fixme'
 default[:'met-bora-ci'][:phabricator][:certificate] = 'fixme'
 
 default[:'met-bora-ci'][:ci_user] = 'jenkins'
+
+default[:'met-bora-ci'][:sbt_version] = '0.13.5'

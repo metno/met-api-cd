@@ -15,3 +15,5 @@ package 'curl'
 include_recipe 'met-bora-ci::arcanist'
 
 include_recipe 'met-bora-ci::_docker'
+
+include_recipe 'met-bora-ci::_sbt'
