@@ -24,3 +24,8 @@
         [ $status -eq 0 ]
     }
 }
+
+@test "docker is installed" {
+    run docker version
+    [ $status -eq 0 ]
+}
