@@ -39,5 +39,5 @@ end
 include_recipe 'met-bora-ci::_common'
 
 jenkins_plugin 'git'
-
 jenkins_plugin 'build-pipeline-plugin'
+jenkins_plugin 'sbt'
