@@ -4,7 +4,7 @@ maintainer_email    'kimtj@met.no'
 license             'All rights reserved'
 description         'Installs/Configures met-bora-ci'
 long_description    'Installs/Configures met-bora-ci'
-version             '0.6.0'
+version             '0.7.0'
 
 depends             'apt',          '~> 2.6'
 depends             'go',           '~> 0.2'
