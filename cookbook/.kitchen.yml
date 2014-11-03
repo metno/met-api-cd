@@ -13,5 +13,6 @@ platforms:
 suites:
   - name: jenkins-server
     run_list:
-        - recipe[met-bora-ci::jenkins_server]
+        - recipe[met-jenkins::default]
+        - recipe[met-bora-ci::jenkins]
     attributes:
