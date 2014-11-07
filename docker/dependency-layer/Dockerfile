@@ -5,9 +5,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -qq -y update
 RUN DEBIAN_FRONTEND=noninteractive apt-get -qq -y install apt-utils
 RUN DEBIAN_FRONTEND=noninteractive apt-get -qq -y install git wget openjdk-7-jdk unzip
 
-# Packages needed for "behave" tests
-RUN DEBIAN_FRONTEND=noninteractive apt-get -qq -y install python-pip
-
 WORKDIR /root
 RUN wget http://dl.bintray.com/sbt/debian/sbt-0.13.5.deb
 RUN dpkg -i sbt-0.13.5.deb
