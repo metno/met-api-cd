@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: met-bora-ci
+# Cookbook Name:: met-api-cd
 # Recipe:: _docker
 #
 # Copyright (C) 2014 MET Norway
@@ -12,6 +12,6 @@ include_recipe 'docker'
 svc = Helpers::Docker.docker_service(node)
 
 group "docker" do
-    members node[:'met-bora-ci'][:ci_user]
+    members node[:'met-api-cd'][:ci_user]
     notifies :restart, "service[#{svc}]"
 end

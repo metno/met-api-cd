@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: met-bora-ci
+# Cookbook Name:: met-api-cd
 # Recipe:: _common
 #
 # Copyright (C) 2014 MET Norway
@@ -12,8 +12,8 @@ include_recipe 'apt'
 package 'git'
 package 'curl'
 
-include_recipe 'met-bora-ci::arcanist'
+include_recipe 'met-api-cd::arcanist'
 
-include_recipe 'met-bora-ci::_docker'
+include_recipe 'met-api-cd::_docker'
 
-include_recipe 'met-bora-ci::_sbt'
+include_recipe 'met-api-cd::_sbt'

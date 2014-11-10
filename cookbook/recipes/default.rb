@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: met-bora-ci
+# Cookbook Name:: met-api-cd
 # Recipe:: default
 #
 # Copyright (C) 2014 MET Norway
@@ -9,6 +9,6 @@
 
 package 'git'
 
-include_recipe 'met-bora-ci::arcanist'
+include_recipe 'met-api-cd::arcanist'
 
 include_recipe 'go::agent'

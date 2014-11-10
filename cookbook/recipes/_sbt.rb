@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: met-bora-ci
+# Cookbook Name:: met-api-cd
 # Recipe:: _sbt
 #
 # Copyright (C) 2014 MET Norway
@@ -11,7 +11,7 @@ package 'wget'
 package 'openjdk-7-jdk'
 package 'unzip'
 
-filename = "sbt-#{node[:'met-bora-ci'][:sbt_version]}.deb"
+filename = "sbt-#{node[:'met-api-cd'][:sbt_version]}.deb"
 dest = "/var/cache/apt/archives/#{filename}"
 
 remote_file dest do
@@ -38,6 +38,6 @@ end
 #
 #execute "download dependencies for sbt" do
     #environment "JAVA_OPTS" => "-Xmx#{mem}M"
-    #user node[:'met-bora-ci'][:ci_user]
+    #user node[:'met-api-cd'][:ci_user]
     #command "sbt -batch"
 #end

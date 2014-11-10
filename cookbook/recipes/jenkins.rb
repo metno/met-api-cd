@@ -1,11 +1,11 @@
 #
-# Cookbook Name:: met-bora-ci
+# Cookbook Name:: met-api-cd
 # Recipe:: jenkins
 #
 # Copyright (C) 2014 MET Norway
 #
 
-include_recipe 'met-bora-ci::_common'
+include_recipe 'met-api-cd::_common'
 
 jenkins_plugin 'git'
 jenkins_plugin 'build-pipeline-plugin'
