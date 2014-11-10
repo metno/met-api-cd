@@ -14,5 +14,5 @@ RUN git reset --hard
 RUN git clean -fdx
 RUN git pull
 
-RUN sed -i 's/localhost/metapi/g' tests/acceptance/behave/features/product_info.feature
+RUN sed -i 's/localhost/met-api/g' tests/acceptance/behave/features/product_info.feature
 CMD behave tests/acceptance/behave
