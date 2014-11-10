@@ -1,4 +1,4 @@
-FROM metapi
+FROM met---------api
 MAINTAINER Martin Grønlien Pejcoch <mpejcoch@gmail.com>
 
 # Packages needed for "behave" tests
