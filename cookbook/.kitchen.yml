@@ -1,8 +1,6 @@
 ---
 driver:
   name: vagrant
-  customize:
-    memory: 2048
 
 provisioner:
   name: chef_zero
@@ -11,7 +9,7 @@ platforms:
   - name: ubuntu-14.04
 
 suites:
-  - name: jenkins-server
+  - name: default
     run_list:
-        - recipe[met-bora-ci::jenkins]
+        - recipe[met-api-cd]
     attributes:

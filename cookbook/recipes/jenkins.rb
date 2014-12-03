@@ -5,8 +5,7 @@
 # Copyright (C) 2014 MET Norway
 #
 
-include_recipe 'met-api-cd::_common'
-
 jenkins_plugin 'git'
-jenkins_plugin 'build-pipeline-plugin'
+jenkins_plugin 'promoted-builds'
+jenkins_plugin 'copyartifact'
 jenkins_plugin 'sbt'

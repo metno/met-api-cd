@@ -7,8 +7,13 @@
 # All rights reserved - Do Not Redistribute
 #
 
+include_recipe 'apt'
+
+include_recipe 'java'
+
+include_recipe 'met-api-cd::sbt'
+
 package 'git'
+package 'curl'
 
-include_recipe 'met-api-cd::arcanist'
-
-include_recipe 'go::agent'
+Chef::Log.info(node['recipes'].inspect)

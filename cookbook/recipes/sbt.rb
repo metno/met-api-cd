@@ -8,7 +8,6 @@
 #
 
 package 'wget'
-package 'openjdk-7-jdk'
 package 'unzip'
 
 filename = "sbt-#{node[:'met-api-cd'][:sbt_version]}.deb"
