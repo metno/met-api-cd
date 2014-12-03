@@ -4,7 +4,7 @@ maintainer_email    'kimtj@met.no'
 license             'All rights reserved'
 description         'Installs/Configures met-api-cd'
 long_description    'Installs/Configures met-api-cd'
-version             '4.0.0'
+version             '4.0.1'
 
 depends             'apt',      '~> 2.6'
 depends             'java',     '~> 1.29'

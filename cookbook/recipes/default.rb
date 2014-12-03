@@ -15,5 +15,3 @@ include_recipe 'met-api-cd::sbt'
 
 package 'git'
 package 'curl'
-
-Chef::Log.info(node['recipes'].inspect)
