@@ -8,10 +8,9 @@
 #
 
 include_recipe 'apt'
-
 include_recipe 'java'
-
 include_recipe 'met-api-cd::sbt'
+include_recipe 'met-api-cd::activator'
 
 package 'git'
 package 'curl'
